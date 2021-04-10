@@ -16,10 +16,40 @@ Plesae see the summary of cotent in each folder as below:
 |baseline_presentation| Folder | This folder contains the data-prep and baseline RF model that was developed for the first check-point| First check-point review|
 |data/random-acts-of-pizza| Folder | This folder contains all the data (training and holdout) for RAOP problem in json and zip format | Raw data folder|
 |error_analysis| Folder | This folder contains the individual error analysis notebooks that the team worked on. This includes the file "RAOP_Combined_notebook" which contains the final full feature engineering flow| Full feature engineering and error analysis|
-|final_model| This is the key folder that contains out final fully tuned ensemble modeling framework with full fledged training and validation pipeline. Also, it contains the "kaggle_submisson_predictions.csv" file which is our final outcome for submission onto Kaggle platform| **Main model** |
+|final_model| This is the key folder that contains out final fully tuned ensemble modeling framework with full fledged training and validation pipeline. Also, it contains the "kaggle_submisson_predictions.csv" file which is our final outcome for submission onto Kaggle platform| **Main model** | **Please use for model review** |
 |prakhar| Folder | This folder is Prakhar's data playground and could be visited to see the exploration Alice did during the project| Prakhar's data exploration|
 |simran| Folder | This folder is Simran's data playground and could be visited to see the exploration Alice did during the project| Simran's data exploration|
-|sristi| Folder | This folder is Srishti's data playground and could be visited to see the exploration Alice did during the project| Srishti's data exploration|
+|srishti| Folder | This folder is Srishti's data playground and could be visited to see the exploration Alice did during the project| Srishti's data exploration|
+
+As mentioned in the above section, our final model resides in the **final_model** folder in the notebook named **RAOP_Combined_Notebook_Final.ipynb**. In terms of feature engineering, we did the following:
+
+1. Simpale text and non-text features (e.g. length, number of posts, number of sub-reddits, posting time, punctuation usage etc.)
+2. Topic probability matrix using Non-negative matrix factorization for unigarms (10 latent topics) and bi-grams (5 latent topics)
+3. Manual category tagging and binary feature generation
+4. Basic sentiment scores per post using NLTK
+5. Doc2Vec representation for each post 
+6. Detection to top 10 keywords associated with success and failure classes and binary vector creation incorporating word similarity using word2vec 
+
+Finally, we tuned 11 base models ('svm','knn','random forest','Extra Trees','XgBoost','ada boost','gbm','logistic regression','Naive Bayes','NN','bagging classifier') on the training set and used a GBM as a meta learner on the probability outcomes of base models as the final form of model stacking. 
+
+### Results
+
+|Model|Model type|ROC-AUC|
+|---|---|---|
+|SVM|base|0.5796|
+|KNN|base|0.5847|
+|Random Forest|base|0.6307|
+|Extra Trees|base|0.6407|
+|XGBoost|base|0.6268|
+|Adaboost|base|0.6526|
+|GBM|base|0.6608|
+|LR|base|0.6288|
+|Gaussian NB|base|0.6359|
+|NN|base|0.6247|
+|Bagging Classifier|base|0.6359|
+|**GBM|meta learner|0.7612**|
+
+Using this stacked ensemble for prediction, we recevied 0.66544 ROC-AUC on kaggle private leaderboard which converts to rank 125.
 
 
 ## Learning Goals
