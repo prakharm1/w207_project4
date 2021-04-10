@@ -21,7 +21,9 @@ Plesae see the summary of cotent in each folder as below:
 |simran| Folder | This folder is Simran's data playground and could be visited to see the exploration Alice did during the project| Simran's data exploration|
 |srishti| Folder | This folder is Srishti's data playground and could be visited to see the exploration Alice did during the project| Srishti's data exploration|
 
-As mentioned in the above section, our final model resides in the **final_model** folder in the notebook named **RAOP_Combined_Notebook_Final.ipynb**. In terms of feature engineering, we did the following:
+As mentioned in the above section, our final model resides in the **final_model** folder in the notebook named **RAOP_Combined_Notebook_Final.ipynb**. 
+
+Originally we had 4040 rows of training data. We divided that in 90/10 ratio between training and validation. In terms of feature engineering, we did the following:
 
 1. Simpale text and non-text features (e.g. length, number of posts, number of sub-reddits, posting time, punctuation usage etc.)
 2. Topic probability matrix using Non-negative matrix factorization for unigarms (10 latent topics) and bi-grams (5 latent topics)
@@ -29,6 +31,8 @@ As mentioned in the above section, our final model resides in the **final_model*
 4. Basic sentiment scores per post using NLTK
 5. Doc2Vec representation for each post 
 6. Detection to top 10 keywords associated with success and failure classes and binary vector creation incorporating word similarity using word2vec 
+
+After complete feature engineering, we eneded up with **111** distinct features that we used in modeling phase.
 
 Finally, we tuned 11 base models ('svm','knn','random forest','Extra Trees','XgBoost','ada boost','gbm','logistic regression','Naive Bayes','NN','bagging classifier') on the training set and used a GBM as a meta learner on the probability outcomes of base models as the final form of model stacking. 
 
