@@ -6,6 +6,21 @@
 
 **Project Link**: https://www.kaggle.com/c/random-acts-of-pizza/ 
 
+## Repository Guide
+Plesae see the summary of cotent in each folder as below:
+
+|Item Name| Item Type| Description | Key Importance|
+|---|---|---|---|
+|.ipynb_checkpoints| Folder | This folder contains the saved check points of jupyter notebook sessions|  None|
+|alice| Folder | This folder is Alice's data playground and could be visited to see the exploration Alice did during the project| Alice's data exploration|
+|baseline_presentation| Folder | This folder contains the data-prep and baseline RF model that was developed for the first check-point| First check-point review|
+|data/random-acts-of-pizza| Folder | This folder contains all the data (training and holdout) for RAOP problem in json and zip format | Raw data folder|
+|error_analysis| Folder | This folder contains the individual error analysis notebooks that the team worked on. This includes the file "RAOP_Combined_notebook" which contains the final full feature engineering flow| Full feature engineering and error analysis|
+|final_model| This is the key folder that contains out final fully tuned ensemble modeling framework with full fledged training and validation pipeline. Also, it contains the "kaggle_submisson_predictions.csv" file which is our final outcome for submission onto Kaggle platform| **Main model** |
+|prakhar| Folder | This folder is Prakhar's data playground and could be visited to see the exploration Alice did during the project| Prakhar's data exploration|
+|simran| Folder | This folder is Simran's data playground and could be visited to see the exploration Alice did during the project| Simran's data exploration|
+|sristi| Folder | This folder is Srishti's data playground and could be visited to see the exploration Alice did during the project| Srishti's data exploration|
+
 
 ## Learning Goals
 * Composite modeling - Secondary Ensembles
