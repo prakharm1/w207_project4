@@ -6,6 +6,8 @@
 
 **Project Link**: https://www.kaggle.com/c/random-acts-of-pizza/ 
 
+**Presentation Link**: https://docs.google.com/presentation/d/19EtoVyiOs-Hx7zCe0ZpoviAotcX1UWjiZL5ZJL_FzSo/edit?usp=sharing
+
 ## Repository Guide
 Plesae see the summary of cotent in each folder as below:
 
