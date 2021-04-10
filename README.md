@@ -47,7 +47,7 @@ Finally, we tuned 11 base models ('svm','knn','random forest','Extra Trees','XgB
 |Gaussian NB|base|0.6359|
 |NN|base|0.6247|
 |Bagging Classifier|base|0.6359|
-|**GBM|meta learner|0.7612**|
+|**GBM**|**meta learner**|**0.7612**|
 
 Using this stacked ensemble for prediction, we recevied 0.66544 ROC-AUC on kaggle private leaderboard which converts to rank 125.
 
