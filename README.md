@@ -57,7 +57,10 @@ Finally, we tuned 11 base models ('svm','knn','random forest','Extra Trees','XgB
 
 Using this stacked ensemble for prediction, we recevied 0.66544 ROC-AUC on kaggle private leaderboard which converts to rank 125.
 
+#### Code Reference
+1. Basic NLTK processing: https://www.kaggle.com/alvations/basic-nlp-with-nltk
 
+# Project Overview 
 ## Learning Goals
 * Composite modeling - Secondary Ensembles
 * Feature selection techniques
