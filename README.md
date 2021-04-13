@@ -8,7 +8,7 @@
 
 **Presentation Link**: https://docs.google.com/presentation/d/19EtoVyiOs-Hx7zCe0ZpoviAotcX1UWjiZL5ZJL_FzSo/edit?usp=sharing
 
-**Project Goal**: Predict whether a post in ![Random Acts of Pizza](https://www.reddit.com/r/Random_Acts_Of_Pizza/) will receive a pizza
+**Project Goal**: Predict whether a post in [Random Acts of Pizza](https://www.reddit.com/r/Random_Acts_Of_Pizza/) will receive a pizza
 
 ## Architecture
 ![Comparison of ROC AUC by models](/img/architecture.png) 
