@@ -11,7 +11,7 @@
 **Project Goal**: Predict whether a post in ![Random Acts of Pizza](https://www.reddit.com/r/Random_Acts_Of_Pizza/) will receive a pizza
 
 ## Architecture
-![Comparison of ROC AUC by models](/img/final_roc_auc_curves.png) 
+![Comparison of ROC AUC by models](/img/architecture.png) 
 
 ## Project Components
 1. **Feature Engineering**:
@@ -28,21 +28,21 @@ After complete feature engineering, we eneded up with **111** distinct features 
 
 2. **Building and Tuning Models**:
 We built and hyperparameter-tuned 11 base models trained on our training set 
-- ![Support Vector Machines](https://scikit-learn.org/stable/modules/svm.html)
-- ![K-Nearest Neighbors](https://scikit-learn.org/stable/modules/neighbors.html)
-- ![Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
-- ![Extra Trees](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html)
-- ![XGBoost](https://xgboost.readthedocs.io/en/latest/)
-- ![AdaBoost](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html)
-- ![Gradient Boosting](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html)
-- ![Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
-- ![Naive Bayes](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.BernoulliNB.html)
-- ![Neural Network](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html)
-- ![Bagging Classifier](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingClassifier.html) 
+- [Support Vector Machines](https://scikit-learn.org/stable/modules/svm.html)
+- [K-Nearest Neighbors](https://scikit-learn.org/stable/modules/neighbors.html)
+- [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+- [Extra Trees](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html)
+- [XGBoost](https://xgboost.readthedocs.io/en/latest/)
+- [AdaBoost](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html)
+- [Gradient Boosting](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html)
+- [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+- [Naive Bayes](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.BernoulliNB.html)
+- [Neural Network](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html)
+- [Bagging Classifier](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingClassifier.html) 
 
 
 3. **Ensemble Model Building**:
-We used a ![Stacked Ensemble](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html) model to the take the predicted probabilities of the (above mentioned) 11 models as inputs and learn how to best combine their predictions for a final output prediction. We used a hyperparameter-tuned Gradient Boosting to be able for this learning.
+We used a [Stacked Ensemble](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html) model to the take the predicted probabilities of the (above mentioned) 11 models as inputs and learn how to best combine their predictions for a final output prediction. We used a hyperparameter-tuned Gradient Boosting to be able for this learning.
 
 4. **Results**:
 ![Comparison of ROC AUC by models](/img/final_roc_auc_curves.png)
