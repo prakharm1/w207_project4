@@ -19,9 +19,9 @@ Plesae see the summary of cotent in each folder as below:
 |data/random-acts-of-pizza| Folder | This folder contains all the data (training and holdout) for RAOP problem in json and zip format | Raw data folder|
 |error_analysis| Folder | This folder contains the individual error analysis notebooks that the team worked on. This includes the file "RAOP_Combined_notebook" which contains the final full feature engineering flow| Full feature engineering and error analysis|
 |final_model| This is the key folder that contains out final fully tuned ensemble modeling framework with full fledged training and validation pipeline. Also, it contains the "kaggle_submisson_predictions.csv" file which is our final outcome for submission onto Kaggle platform| **Main model** | **Please use for model review** |
-|prakhar| Folder | This folder is Prakhar's data playground and could be visited to see the exploration Alice did during the project| Prakhar's data exploration|
-|simran| Folder | This folder is Simran's data playground and could be visited to see the exploration Alice did during the project| Simran's data exploration|
-|srishti| Folder | This folder is Srishti's data playground and could be visited to see the exploration Alice did during the project| Srishti's data exploration|
+|prakhar| Folder | This folder is Prakhar's data playground and could be visited to see the exploration Prakhar did during the project| Prakhar's data exploration|
+|simran| Folder | This folder is Simran's data playground and could be visited to see the exploration Simran did during the project| Simran's data exploration|
+|srishti| Folder | This folder is Srishti's data playground and could be visited to see the exploration Srishti did during the project| Srishti's data exploration|
 
 As mentioned in the above section, our final model resides in the **final_model** folder in the notebook named **RAOP_Combined_Notebook_Final.ipynb**. 
 
@@ -39,6 +39,8 @@ After complete feature engineering, we eneded up with **111** distinct features 
 Finally, we tuned 11 base models ('svm','knn','random forest','Extra Trees','XgBoost','ada boost','gbm','logistic regression','Naive Bayes','NN','bagging classifier') on the training set and used a GBM as a meta learner on the probability outcomes of base models as the final form of model stacking. 
 
 ### Results
+
+![Comparison of ROC AUC by models](final_roc_auc_curves.png)
 
 |Model|Model type|ROC-AUC|
 |---|---|---|
