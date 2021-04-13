@@ -11,7 +11,7 @@
 **Project Goal**: Predict whether a post in [Random Acts of Pizza](https://www.reddit.com/r/Random_Acts_Of_Pizza/) will receive a pizza
 
 ## Architecture
-![Comparison of ROC AUC by models](/img/architecture.png) 
+![Comparison of ROC AUC by models](/img/architecture_diag.png) 
 
 ## Project Components
 1. **Feature Engineering**:
