@@ -75,7 +75,7 @@ Plesae see the summary of cotent in each folder as below:
 |baseline_presentation| Folder | This folder contains the data-prep and baseline RF model that was developed for the first check-point| First check-point review|
 |data/random-acts-of-pizza| Folder | This folder contains all the data (training and holdout) for RAOP problem in json and zip format | Raw data folder|
 |error_analysis| Folder | This folder contains the individual error analysis notebooks that the team worked on. This includes the file "RAOP_Combined_notebook" which contains the final full feature engineering flow| Full feature engineering and error analysis|
-|final_model| This is the key folder that contains out final fully tuned ensemble modeling framework with full fledged training and validation pipeline. Also, it contains the "kaggle_submisson_predictions.csv" file which is our final outcome for submission onto Kaggle platform| **Main model** | **Please use for model review** |
+|final_model| **Main model** |This is the key folder that contains out final fully tuned ensemble modeling framework with full fledged training and validation pipeline. Also, it contains the "kaggle_submisson_predictions.csv" file which is our final outcome for submission onto Kaggle platform | **Please use for model review** |
 |img| Folder | This folder contains the images used in the README| Images |
 |prakhar| Folder | This folder is Prakhar's data playground and could be visited to see the exploration Prakhar did during the project| Prakhar's data exploration|
 |simran| Folder | This folder is Simran's data playground and could be visited to see the exploration Simran did during the project| Simran's data exploration|
